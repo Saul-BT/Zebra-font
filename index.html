@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zebra font</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
+    <style>
+    html, body {margin: 0; padding: 0}
+    @font-face {
+      font-family: "Zebra";
+      src: local("?"), url("Zebra.woff") format("woff"), url("Zebra.ttf") format("truetype");
+    }
+    * {font-family: calibri, arial, sans-serif}
+    header {
+      display: flex;
+      padding: 30px 20px 10px 20px;
+      box-sizing: border-box;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      min-height: 100vh;
+      background-color: #efefef;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23d5d5d5' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 100px;
+      text-shadow: 0 2px 5px black;
+    }
+    .zebra {
+      font-family: "Zebra";
+      font-weight: 500;
+    }
+    .buttons {
+      text-align: center;
+      margin: 0 0 10vh 0;
+    }
+    .buttons > button {
+      border: 0;
+      margin: 5px;
+      padding: 8px 14px;
+      background-color: white;
+      font-size: 20px;
+      font-weight: 100;
+      outline: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .example {padding: 20px}
+    .example > .zebra {
+      padding: 20px;
+      background-color: #f4f4f4;
+      font-size: 30px;
+      border-radius: 3px;
+    }
+    footer {
+      background-color: #F4F4F4FF;
+    }
+    footer > p {padding: 20px}
+    footer > div {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    footer > div > a {
+      flex: 1;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      height: 70px;
+      padding: 50px 0 0 0;
+      font-size: 22px;
+    }
+    footer > div > a:first-child {
+      background-color: #1fa67a;
+    }
+    footer > div > a:first-child + a {
+      background-color: #ffd70a;
+    }
+    footer > div > a:last-child {
+      background-color: #9179ba;
+    }
+    @media screen and (max-width: 700px) {
+      footer > div  {
+        flex-flow: column nowrap;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="zebra">Zebra</h1>
+      <div>
+        <div class="buttons">
+          <button><i class="fa fa-download" aria-hidden="true"></i> Download</button>
+          <button><i class="fa fa-github" aria-hidden="true"></i> Source</button>
+        </div>
+        <p>This font is free to use, created by hand with the Fonty application.</p>
+        <p>Here you have the repo with the Zebra font, and the code to use it:</p>
+        <pre><code class="css hljs">
+    @font-face {
+        font-family: "Zebra";
+        src: local("?"), url("Zebra.woff") format("woff"), url("Zebra.ttf") format("truetype");
+    }
+    .zebra { /* I recommend especially that it be used with a class */
+        font-family: "Zebra";
+        font-weight: 500;
+    }
+        </code></pre>
+      </div>
+    </header>
+    <div class="example">
+      <p>These are all the characters of the Zebra font:</p>
+      <p class="zebra">! " # & ' ( ) * , - . / 0 1 2 3 4 5 6 7 8 9 : ; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ ] a b c d e f g h i j k l m n o p q r s t u v w x y z ‐ – — ‘ ’ “ ” ... ′ ′′</p>
+    </div>
+    <footer>
+      <p>Page developed using:</p>
+      <div>
+        <a href="http://fontawesome.io/">Font Awesome</a>
+        <a href="https://highlightjs.org/">Highlight.js</a>
+        <a href="http://www.heropatterns.com/">Hero Patterns</a>
+      </div>
+    </footer>
+    <script src="https://use.fontawesome.com/6e91e07b68.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
