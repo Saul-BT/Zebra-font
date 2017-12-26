@@ -36,16 +36,24 @@
       text-align: center;
       margin: 0 0 10vh 0;
     }
-    .buttons > button {
+    .buttons > a {
       border: 0;
+      display: inline-block;
       margin: 5px;
       padding: 8px 14px;
+      color: black;
+      text-decoration: none;
       background-color: white;
       font-size: 20px;
       font-weight: 100;
       outline: 0;
       border-radius: 5px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: .3s;
+    }
+    .buttons > a:hover {
+      transform: translateY(-5%);
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
     }
     .example {padding: 20px}
     .example > .zebra {
@@ -92,8 +100,8 @@
       <h1 class="zebra">Zebra</h1>
       <div>
         <div class="buttons">
-          <button><i class="fa fa-download" aria-hidden="true"></i> Download</button>
-          <button><i class="fa fa-github" aria-hidden="true"></i> Source</button>
+          <a href="https://github.com/Saul-BT/Zebra-font/raw/master/Zebra-Font.rar"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+          <a href="https://github.com/Saul-BT/Zebra-font"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
         </div>
         <p>This font is free to use, created by hand with the Fonty application.</p>
         <p>Here you have the repo with the Zebra font, and the code to use it:</p>
