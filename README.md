@@ -23,6 +23,7 @@ It's as simple as adding this CSS snippet in your style sheet:
 ````
 ### Download
 - **With Git:**
-
-`https://github.com/Saul-BT/Zebra-font.git`
+```bash
+git clone https://github.com/Saul-BT/Zebra-font.git
+```
 - **[Direct download](https://github.com/Saul-BT/Zebra-font/raw/master/Zebra-Font.rar)**
