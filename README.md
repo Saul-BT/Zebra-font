@@ -1,14 +1,14 @@
 # Zebra-font
-It's handmade striped font.
-![Zebra](https://i.cubeupload.com/JMQfXC.png)
+A handmade striped font.
 ```css
 .zebra {color: black} /* Useful for light backgrounds */
 ```
+![Zebra](https://i.cubeupload.com/JMQfXC.png)
 
-![Zebra](https://i.cubeupload.com/s4BYAo.png)
 ```css
 .zebra {color: white} /* Useful for dark backgrounds */
 ```
+![Zebra](https://i.cubeupload.com/s4BYAo.png)
 ## How to use it?
 It's as simple as adding this CSS snippet in your style sheet:
 ````css
